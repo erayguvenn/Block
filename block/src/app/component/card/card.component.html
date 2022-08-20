@@ -1,0 +1,17 @@
+<div  class="card" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  <img src="assets/images/image{{post.imageId}}.jpg" alt="{{post}}" style="width:100%">
+  <p class="postTitle">{{post.title}} </p>
+  <div class="row  hizala">
+    <div class="butonlar">
+      <button (click)="openPostDetails(post.id,post.title,post.body,post.imageId); " class="button button1 col-md-2"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">View
+      </button>
+      <button (click)=" openDialog(post.id,post.title,post.body)" class="button button2 col-md-2" data-bs-toggle="modal"
+              data-bs-target="#staticBackdropp">Edit
+      </button>
+    </div>
+  </div>
+  <button class="buttonPost badge bg-secondary " type="button">post-{{post.id}}</button>
+</div>
+
+

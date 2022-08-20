@@ -1,0 +1,28 @@
+<!-- comments -->
+
+  <div *ngFor="let comment of commentList">
+    <div  *ngFor="let user of userList">
+      <div *ngIf="comment.postId == postId">
+        <div *ngIf="user.id==comment.userId">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="comment mt-4 text-justify float-left">
+                <img src="assets/images/profile/profile{{user.id}}.jpg" alt="" class="rounded-circle" width="40" height="40">
+                <h4>{{user.name}}</h4>
+                <div class="comentText">
+                  <br>
+                  <p> {{comment.name}}</p>
+                  <p>{{comment.body}}</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+

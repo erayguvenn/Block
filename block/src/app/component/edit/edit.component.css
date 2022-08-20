@@ -1,0 +1,16 @@
+input{
+  border-color: #a9a9a9;
+}
+.applyButon{
+  background-color: #15aa20;
+  color:white;
+  float: right;
+
+}
+
+@media (max-height: 720px) {
+
+  .container {
+
+  }
+}

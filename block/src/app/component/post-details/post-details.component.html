@@ -1,0 +1,23 @@
+
+<button (click)="close()" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="container" >
+  <h3 class="modal-title" id="staticBackdropLabel"><strong>Post Details</strong> </h3>
+  <div class="postDetails row ">
+    <div class="resim col-md-5">
+      <img src="assets/images/image{{data.imageId}}.jpg" alt="image" style="width:100%">
+    </div>
+    <div class="col-md-7">
+      <h4><strong>{{data.title}}</strong> </h4>
+      <div class="metin">
+        <p>{{data.body}}</p>
+      </div>
+    </div>
+    <div>
+      <app-comments [postId]="data.id"></app-comments>
+    </div>
+  </div>
+</div>
+
+
+
+

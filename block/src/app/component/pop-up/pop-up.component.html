@@ -1,0 +1,19 @@
+<button type="button" class="btn-close" (click)="close()"  aria-label="Close"></button>
+<div class="container">
+  <div id="staticBackdropp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+       aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" >
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input #edTitle type="text" name="title"  class="form-control" style="width: 100%"  [(ngModel)]="data.title" (ngModelChange)="data.title = $event">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea #edBody class="form-control" name="body"   style="width:100%; height:200px;" [(ngModel)]="data.body" (ngModelChange)="data.body = $event" ></textarea>
+    </div>
+    <hr/>
+    <button (click)="closeDialog()" type="submit" class="btn btn-success applyButon ">Apply</button>
+  </form>
+
+</div>
+</div>

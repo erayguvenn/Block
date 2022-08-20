@@ -1,0 +1,30 @@
+
+
+
+#profile{
+  background-color: unset;
+
+}
+
+.comment{
+  background-color: #e9ecef;
+  padding-left:4%;
+  padding-right:4%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.comment h4,.comment span,.darker h4,.darker span{
+  display: inline;
+}
+
+.comment p,.comment span,.darker p,.darker span{
+  color:black;
+}
+
+h4{
+  color: black;
+  font-weight: bold;
+}
+.comment img{
+  margin-right: 2%;
+}
