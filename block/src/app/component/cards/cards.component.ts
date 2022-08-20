@@ -62,5 +62,10 @@ export class CardsComponent implements OnInit {
   }
 
 
+  p: number = 1;
+
+
+
 }
+
 
